@@ -1,0 +1,31 @@
+#include<stdio.h>
+void main()
+{
+int X,P,a,c=0;
+printf("Enter INR:");
+scanf("%d",&X);
+printf("Enter percentage:"):
+scanf("%d",&P);
+if(X>=0&&X<=1000)
+{
+if(P>=0&&P<=100)
+{
+a=X;
+while(a!=0&&a<1)
+{
+a=a-a*P/100;
+c++;
+if(a==0)
+{
+printf("price is %d",X);
+printf("number of INRs paid later are %d",c);
+break;
+}
+}
+}
+else
+printf("enter valid percentage");
+}
+else
+printf("enter valid price");
+}

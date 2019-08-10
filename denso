@@ -11,11 +11,11 @@ if(X>=0&&X<=1000)
 if(P>=0&&P<=100)
 {
 a=X;
-while(a!=0&&a<1)
+while(a>=1)
 {
 a=a-a*P/100;
 c++;
-if(a==0)
+if(a==0||a<1)
 {
 printf("price is %d",X);
 printf("number of INRs paid later are %d",c);
